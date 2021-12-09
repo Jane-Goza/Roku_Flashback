@@ -1,3 +1,8 @@
 @import "./modules/header";
 @import "./modules/footer";
 @import "./modules/login";
+@import "./modules/home";
+
+.hidden {
+    display: none;
+}
