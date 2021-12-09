@@ -1,0 +1,30 @@
+{
+  "name": "roku_flashback",
+  "version": "1.0.0",
+  "description": "Streaming App",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jane-Goza/Roku_Flashback.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jane-Goza/Roku_Flashback/issues"
+  },
+  "homepage": "https://github.com/Jane-Goza/Roku_Flashback#readme",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-sass": "^5.0.0"
+  },
+  "dependencies": {
+    "sass": "^1.44.0"
+  }
+}
