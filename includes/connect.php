@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => 'localhost', // this will change when you go live
-        'dbname' => '', // update this with your database name
+        'dbname' => 'db_roku', // update this with your database name
         'charset' => 'utf8'
     );
 
@@ -10,7 +10,7 @@
     //This is the DB credentials
 
     $db_user = 'root';
-    $db_pass = 'root'; // windows users leave this blank
+    $db_pass = ''; // windows users leave this blank
 
     try {
         $pdo = new PDO($dsn, $db_user, $db_pass);
