@@ -1,3 +1,7 @@
+import { getData} from './compontents/TheDataMiner.js';
+import  imageGallery from './compontents/imageGallery.js';
+
+
 (() => {
 
     const menuBtn = document.querySelector('.menu-btn');
