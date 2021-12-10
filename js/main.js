@@ -1,4 +1,5 @@
 import { getData} from './compontents/TheDataMiner.js';
+
 import  imageGallery from './compontents/imageGallery.js';
 import Header from './components/Header'
 import Footer from './components/Footer'
@@ -33,6 +34,11 @@ import Footer from './components/Footer'
     }
 
     menuBtn.addEventListener('click', toggleMenu);
+    const myVue = new Vue({
+      create: function () {
+        getData(null, (data) => {
+          this.data = data.filter(item => item.gallery === "true");
+      }
 
 })();
 
