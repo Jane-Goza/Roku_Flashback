@@ -33,6 +33,11 @@ import  imageGallery from './compontents/imageGallery.js';
     }
 
     menuBtn.addEventListener('click', toggleMenu);
+    const myVue = new Vue({
+      create: function () {
+        getData(null, (data) => {
+          this.data = data.filter(item => item.gallery === "true");
+      }
 
 })();
 
