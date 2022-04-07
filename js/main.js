@@ -1,35 +1,32 @@
-import { getData} from './compontents/TheDataMiner.js';
-
-import  imageGallery from './compontents/imageGallery.js';
-import Header from './components/Header'
-import Footer from './components/Footer'
-import MenuBtn from './compomemts/MenuBtn'
-
 (() => {
 
-    const myVue = new Vue({
-      create: function () {
-        getData(null, (data) => {
-          this.data = data.filter(item => item.gallery === "true")
-        });
-      },
-        data: {
-          data: [],
-          currentItem: {}
-        },
+  const menuBtn = document.querySelector('.menu-btn');
+  const hamburger = document.querySelector('.menu-btn__burger');
+  const nav = document.querySelector('.nav-mobile');
+  const menuNav = document.querySelector('.menu-nav');
+  const navItems = document.querySelectorAll('.menu-nav__item');
 
-        methods: {
-          changeContent(item) {
-            this.currentItem = item;
-          },
-        },
+  let showMenu = false; // not open
 
-        components: {
-            tile: imageGallery,
-            modal: modal,
-        }
+  function toggleMenu() { // ! = false
+    if(!showMenu) {
+      hamburger.classList.add('open');
+      nav.classList.add('open');
+      menuNav.classList.add('open');
+      navItems.forEach(item => item.classList.add('open'));
 
-    }).$mount("#app");
 
+      showMenu = true;
+    } else {
+      hamburger.classList.remove('open');
+      nav.classList.remove('open');
+      menuNav.classList.remove('open');
+      navItems.forEach(item => item.classList.remove('open'));
+
+      showMenu = false;
+    }
+  }
+
+  menuBtn.addEventListener('click', toggleMenu);
 
 })();

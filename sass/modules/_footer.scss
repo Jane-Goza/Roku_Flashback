@@ -6,6 +6,8 @@
     background: white;
     border: solid #707070 1px;
     align-items:flex-end;
+    margin-left: auto;
+    margin-right: auto;
 
     & .logo {
         margin-left: 20px;
@@ -52,8 +54,8 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .copyright > img {
-        max-width: 10%;
+@media screen and (max-width: 768px) {
+    #footer {
+        display: none;
     }
   }

@@ -3,6 +3,8 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 40px  20px;
+    margin-left: auto;
+    margin-right: auto;
     
     z-index: 2;
 }
@@ -36,7 +38,6 @@ header {
           width: 28px;
           height: 3px;
           background:#662D91;
-          ;
           transition: all .5s ease-out;
         }
     
@@ -72,7 +73,6 @@ header {
       top: 0;
       right: 0;
       width: 70%;
-      opacity: 0.98;
       visibility: hidden;
     
       &.open {
@@ -91,7 +91,6 @@ header {
         background: #662D91;
         list-style-type: none;
         padding-left: 1rem;
-        opacity: 0;
         transition: all .5s ease-out;
     
         &.open {
@@ -117,7 +116,7 @@ header {
           display: inline-block;
           font-size: 1.5rem;
           padding: 0.5em 0;
-          font-weight: bold;
+          font-weight: 300;
           transition: all .5s ease-out;
     
           &:hover {
@@ -149,6 +148,31 @@ header {
     li:not(:last-child) {
       padding-right: 3em;
     }
+  }
+
+  .social_media {
+    margin-top: 14em;
+    margin-right: 160px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social_media img {
+    width: 25px;
+  }
+
+  .copyright_mobile img {
+    width: 12px;
+    padding-right: 10px;
+  }
+  .copyright_mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.5em;
+  }
+  .copyright_mobile p, img{
+    color: #fff;
   }
 
   @media screen and (min-width: 768px) {
