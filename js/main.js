@@ -39,5 +39,6 @@ import  imageGallery from './compontents/imageGallery.js';
           this.data = data.filter(item => item.gallery === "true");
       }
 
-})();
+})
+()
 

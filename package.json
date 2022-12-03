@@ -22,9 +22,10 @@
     "dart-sass": "^1.25.0",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^8.0.0",
-    "gulp-sass": "^5.0.0"
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0"
   },
-  "dependencies": {
-    "sass": "^1.44.0"
-  }
+  "dependencies": {}
 }
